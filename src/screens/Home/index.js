@@ -5,7 +5,7 @@ export default class Home extends Component {
   render() {
     return (
       <View>
-        <Text>Olá mundo</Text>
+        <Text>Olá mundo!</Text>
       </View>
     );
   }
