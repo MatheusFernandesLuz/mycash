@@ -1,17 +1,20 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import Home from "./screens/Home";
 
-const AppStack = createStackNavigator();
+const Drawer = createDrawerNavigator();
 
 export default function Routes() {
   return (
-    <NavigationContainer>
-      <AppStack.Navigator>
-        <AppStack.Screen name="App Cash" component={Home} />
-      </AppStack.Navigator>
-    </NavigationContainer>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <Drawer.Navigator headerMode="none">
+          <Drawer.Screen name="App Cash" component={Home} />
+        </Drawer.Navigator>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
