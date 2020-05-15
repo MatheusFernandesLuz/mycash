@@ -7,6 +7,8 @@ import Style from "./style";
 const classes = Style();
 
 const cardButton = ({ destiny, title }) => {
+  const navigation = useNavigation();
+
   return (
     <TouchableOpacity
       style={classes.cardButton}
@@ -17,7 +19,7 @@ const cardButton = ({ destiny, title }) => {
   );
 };
 
-export default ({ title, body, buttonProps }) => {
+export default ({ title, body, footer, buttonProps }) => {
   return (
     <View style={classes.card}>
       <View style={classes.cardHeader}>
@@ -25,7 +27,8 @@ export default ({ title, body, buttonProps }) => {
         {buttonProps && cardButton(buttonProps)}
       </View>
       <FlatLine></FlatLine>
-      <View style={classes.cardBody}>{body}</View>
+      <View>{body}</View>
+      <View>{footer}</View>
     </View>
   );
 };
