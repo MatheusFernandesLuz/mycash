@@ -7,7 +7,7 @@ export default () =>
       backgroundColor: "#F1F1F1",
       width: "95%",
       minHeight: 100,
-      marginTop: 15,
+      marginBottom: 15,
       borderRadius: 20,
       elevation: 10,
       paddingVertical: 10,

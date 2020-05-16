@@ -19,7 +19,7 @@ const cardButton = ({ destiny, title }) => {
   );
 };
 
-export default ({ title, body, footer, buttonProps }) => {
+export default function CardBase({ title, body, footer, buttonProps }) {
   return (
     <View style={classes.card}>
       <View style={classes.cardHeader}>
@@ -31,4 +31,4 @@ export default ({ title, body, footer, buttonProps }) => {
       <View>{footer}</View>
     </View>
   );
-};
+}

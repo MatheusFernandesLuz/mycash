@@ -5,25 +5,26 @@ import Style from "./style";
 
 const classes = Style();
 
-const cardBody = () => {
+export default function CardTotais() {
   return (
-    <View style={classes.container}>
-      <View style={classes.sideTitles}>
-        <Text style={classes.titleText}>Saldo em contas: </Text>
-        <Text style={classes.titleText}>Faturas: </Text>
-        <Text style={classes.titleText}>Investimentos: </Text>
-        <Text style={classes.titleText}>Reserva financeira: </Text>
-      </View>
-      <View style={classes.sideTotals}>
-        <Text style={classes.totalText}>R$ 1.251,80</Text>
-        <Text style={classes.totalText}>R$ 1.251,80</Text>
-        <Text style={classes.totalText}>R$ 1.251,80</Text>
-        <Text style={classes.totalText}>R$ 1.251,80</Text>
-      </View>
-    </View>
+    <Card
+      title="Totais"
+      body={
+        <View style={classes.container}>
+          <View style={classes.sideTitles}>
+            <Text style={classes.titleText}>Saldo em contas: </Text>
+            <Text style={classes.titleText}>Faturas: </Text>
+            <Text style={classes.titleText}>Investimentos: </Text>
+            <Text style={classes.titleText}>Reserva financeira: </Text>
+          </View>
+          <View style={classes.sideTotals}>
+            <Text style={classes.totalText}>R$ 1.251,80</Text>
+            <Text style={classes.totalText}>R$ 1.251,80</Text>
+            <Text style={classes.totalText}>R$ 1.251,80</Text>
+            <Text style={classes.totalText}>R$ 1.251,80</Text>
+          </View>
+        </View>
+      }
+    ></Card>
   );
-};
-
-export default () => {
-  return <Card title="Totais" body={cardBody()}></Card>;
-};
+}
