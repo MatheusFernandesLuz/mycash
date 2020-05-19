@@ -35,7 +35,7 @@ export default function CardResumo() {
             </TouchableOpacity>
             <Text style={classes.tituloValor}>Economia</Text>
             <Text style={[classes.valor, { color: "#005AE2" }]}>
-              R$ 1.045,50
+              R$ 1.000,00
             </Text>
           </View>
         </View>

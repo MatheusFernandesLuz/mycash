@@ -2,9 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import Icon from "@expo/vector-icons/Entypo";
 
-import Card from "../CardBase";
 import Style from "./style";
-
 const classes = Style();
 
 export default function Transaction({ description, category, value, date }) {
@@ -20,13 +18,17 @@ export default function Transaction({ description, category, value, date }) {
           >
             {description}
           </Text>
-          <Text numberOfLines={1} ellipsizeMode="tail" style={classes.category}>
+          <Text
+            numberOfLines={1}
+            ellipsizeMode="tail"
+            style={classes.secondary}
+          >
             {category}
           </Text>
         </View>
         <View style={classes.right}>
           <Text style={classes.value}>{value}</Text>
-          <Text style={classes.date}>{date}</Text>
+          <Text style={classes.secondary}>{date}</Text>
         </View>
       </View>
     </View>

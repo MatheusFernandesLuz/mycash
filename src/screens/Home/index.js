@@ -11,7 +11,7 @@ const classes = Styles();
 export default class Home extends Component {
   render() {
     return (
-      <SafeAreaView scrollenabled style={classes.container}>
+      <SafeAreaView style={classes.container}>
         <ScrollView
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ alignItems: "center" }}

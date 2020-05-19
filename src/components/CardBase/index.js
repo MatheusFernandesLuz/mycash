@@ -27,7 +27,7 @@ export default function CardBase({ title, body, footer, buttonProps }) {
         {buttonProps && cardButton(buttonProps)}
       </View>
       <FlatLine></FlatLine>
-      <View>{body}</View>
+      <View style={classes.cardBody}>{body}</View>
       <View>{footer}</View>
     </View>
   );

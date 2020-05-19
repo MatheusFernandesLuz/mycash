@@ -2,6 +2,11 @@ export default {
   fontFamily: {
     regular: "montserrat-regular",
     bold: "montserrat-bold",
+    medium: "montserrat-medium",
   },
-  color: "#2E2E2E",
+
+  color: {
+    main: "#424242",
+    secondary: "#727272",
+  },
 };

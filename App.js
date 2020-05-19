@@ -6,6 +6,7 @@ import { AppLoading } from "expo";
 const fetchFonts = () => {
   return Font.loadAsync({
     "montserrat-regular": require("./assets/fonts/Montserrat-Regular.ttf"),
+    "montserrat-medium": require("./assets/fonts/Montserrat-Medium.ttf"),
     "montserrat-bold": require("./assets/fonts/Montserrat-Bold.ttf"),
   });
 };

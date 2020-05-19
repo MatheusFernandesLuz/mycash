@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import commom from "./../../commonStyles";
 
 export default () =>
   StyleSheet.create({
@@ -11,26 +12,25 @@ export default () =>
 
     middle: {
       flex: 1,
-      marginHorizontal: 8,
-    },
-
-    description: {
-      fontWeight: "bold",
-    },
-
-    category: {
-      fontSize: 12,
+      marginHorizontal: 10,
     },
 
     right: {
       alignItems: "flex-end",
     },
 
-    value: {
-      fontWeight: "bold",
+    description: {
+      fontSize: 14,
+      fontFamily: commom.fontFamily.medium,
     },
 
-    date: {
-      fontSize: 12,
+    value: {
+      fontFamily: commom.fontFamily.medium,
+    },
+
+    secondary: {
+      fontSize: 11,
+      fontFamily: commom.fontFamily.regular,
+      color: commom.color.secondary,
     },
   });

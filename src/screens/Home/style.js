@@ -10,7 +10,6 @@ export default () =>
     },
 
     header: {
-      width: "100%",
       marginVertical: 20,
       alignItems: "center",
       justifyContent: "center",

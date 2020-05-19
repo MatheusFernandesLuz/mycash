@@ -10,13 +10,13 @@ export default () =>
     },
 
     titleText: {
-      color: common.color,
+      color: common.color.main,
       fontFamily: common.fontFamily.regular,
       marginVertical: 2,
     },
 
     totalText: {
-      color: common.color,
+      color: common.color.main,
       fontFamily: common.fontFamily.bold,
       marginVertical: 2,
     },
