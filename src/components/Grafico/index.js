@@ -9,7 +9,7 @@ export default ({ color, percent, subtitle }) => {
     <View style={classes.container}>
       <Text style={[classes.percentagem, { color: color }]}>{percent}%</Text>
       <View
-        style={[classes.grafico, { height: percent, backgroundColor: color }]}
+        style={[classes.grafico, { height: 100, backgroundColor: color }]}
       />
       <Text style={[classes.textoGrafico, { color: color }]}>{subtitle}</Text>
     </View>

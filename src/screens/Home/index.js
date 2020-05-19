@@ -18,7 +18,7 @@ export default class Home extends Component {
           style={classes.scroll}
         >
           <View style={classes.header}>
-            <Text style={classes.textDefault}>Cabeçalho</Text>
+            <Text style={classes.titleHeader}>Cabeçalho</Text>
           </View>
           <CardTotais></CardTotais>
           <CardResumo></CardResumo>

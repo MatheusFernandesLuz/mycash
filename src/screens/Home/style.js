@@ -16,20 +16,13 @@ export default () =>
       justifyContent: "center",
     },
 
-    textDefault: {
+    titleHeader: {
       color: "#F1F1F1",
       fontSize: 22,
-      fontWeight: "bold",
+      fontFamily: common.fontFamily.bold,
     },
 
     scroll: {
       width: "100%",
-    },
-
-    titleText: {
-      fontFamily: common.fontFamily,
-      color: common.color,
-      fontSize: 14,
-      marginTop: 4,
     },
   });

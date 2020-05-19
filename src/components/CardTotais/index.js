@@ -11,13 +11,13 @@ export default function CardTotais() {
       title="Totais"
       body={
         <View style={classes.container}>
-          <View style={classes.sideTitles}>
+          <View>
             <Text style={classes.titleText}>Saldo em contas: </Text>
             <Text style={classes.titleText}>Faturas: </Text>
             <Text style={classes.titleText}>Investimentos: </Text>
             <Text style={classes.titleText}>Reserva financeira: </Text>
           </View>
-          <View style={classes.sideTotals}>
+          <View>
             <Text style={classes.totalText}>R$ 1.251,80</Text>
             <Text style={classes.totalText}>R$ 1.251,80</Text>
             <Text style={classes.totalText}>R$ 1.251,80</Text>

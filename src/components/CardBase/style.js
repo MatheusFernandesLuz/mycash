@@ -22,14 +22,13 @@ export default () =>
     },
 
     mainText: {
-      fontFamily: common.fontFamily,
+      fontFamily: common.fontFamily.bold,
       color: common.color,
       fontSize: 18,
-      fontWeight: "bold",
     },
 
     cardButton: {
-      borderWidth: 1,
+      borderWidth: 0.7,
       borderColor: "#424242",
       borderRadius: 20,
       paddingVertical: 3,
@@ -40,5 +39,7 @@ export default () =>
 
     textButton: {
       color: "#424242",
+      fontSize: 12,
+      fontFamily: common.fontFamily.regular,
     },
   });

@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import common from "./../../commonStyles";
 
 export default () =>
   StyleSheet.create({
@@ -9,8 +10,8 @@ export default () =>
 
     percentagem: {
       fontSize: 18,
-      fontWeight: "bold",
       marginLeft: 5,
+      fontFamily: common.fontFamily.bold,
     },
 
     grafico: {
@@ -19,7 +20,7 @@ export default () =>
     },
 
     textoGrafico: {
-      fontSize: 14,
-      fontWeight: "bold",
+      fontSize: 12,
+      fontFamily: common.fontFamily.bold,
     },
   });

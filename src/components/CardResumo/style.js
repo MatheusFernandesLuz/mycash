@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
+import common from "../../commonStyles";
 
 export default () =>
   StyleSheet.create({
     container: {
       flexDirection: "row",
       justifyContent: "space-around",
-      alignItems: "flex-end",
+      alignItems: "center",
       paddingVertical: 10,
     },
 
@@ -14,51 +15,39 @@ export default () =>
       height: "100%",
       flexDirection: "row",
       justifyContent: "space-around",
-      backgroundColor: "#e5e5e5",
+      alignItems: "flex-end",
+      backgroundColor: "#E5E5E5",
       borderRadius: 10,
       marginRight: 10,
+      paddingVertical: 10,
     },
 
     valores: {
       height: "100%",
+      alignItems: "flex-end",
+      justifyContent: "flex-start",
     },
 
     touchArea: {
-      alignItems: "flex-start",
+      alignItems: "flex-end",
       marginVertical: 3,
     },
 
     tituloValor: {
       color: "#424242",
+      fontSize: 12,
+      fontFamily: common.fontFamily.regular,
+    },
+
+    valor: {
       fontSize: 14,
-    },
-
-    valorReceitas: {
-      fontWeight: "bold",
-      fontSize: 15,
-      color: "#008234",
-    },
-
-    valorDespesas: {
-      fontWeight: "bold",
-      fontSize: 15,
-      color: "#AA3F3F",
-    },
-
-    valorEconomia: {
-      fontWeight: "bold",
-      fontSize: 15,
-      color: "#005AE2",
+      fontFamily: common.fontFamily.bold,
     },
 
     footer: {
-      fontSize: 12,
+      fontSize: 11,
       padding: 5,
-    },
-
-    acimaPlanejado: {
-      fontSize: 14,
-      fontWeight: "bold",
-      color: "#AA3F3F",
+      color: "#424242",
+      fontFamily: common.fontFamily.bold,
     },
   });
