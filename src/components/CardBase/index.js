@@ -19,9 +19,9 @@ const cardButton = ({ destiny, title }) => {
   );
 };
 
-export default function CardBase({ title, body, footer, buttonProps }) {
+export default function CardBase({ title, body, footer, buttonProps, style }) {
   return (
-    <View style={classes.card}>
+    <View style={[classes.card, style]}>
       <View style={classes.cardHeader}>
         <Text style={classes.mainText}>{title}</Text>
         {buttonProps && cardButton(buttonProps)}

@@ -6,9 +6,10 @@ import Grafico from "../Grafico";
 import Style from "./style";
 const classes = Style();
 
-export default function CardResumo() {
+export default function CardResumo({ style }) {
   return (
     <Card
+      style={style}
       title="Resumo mensal"
       buttonProps={{
         destiny: "Planejamento",

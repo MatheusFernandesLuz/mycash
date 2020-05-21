@@ -19,18 +19,25 @@ export default () =>
       alignItems: "flex-end",
     },
 
+    icon: {
+      color: commom.color.textMain,
+      fontSize: 24,
+    },
+
     description: {
       fontSize: 14,
+      color: commom.color.textMain,
       fontFamily: commom.fontFamily.medium,
     },
 
     value: {
+      color: commom.color.textMain,
       fontFamily: commom.fontFamily.medium,
     },
 
     secondary: {
       fontSize: 11,
       fontFamily: commom.fontFamily.regular,
-      color: commom.color.secondary,
+      color: commom.color.textSecondary,
     },
   });

@@ -9,7 +9,7 @@ export default function Transaction({ description, category, value, date }) {
   return (
     <View>
       <View style={classes.container}>
-        <Icon name="star-outlined" size={24} color="black" />
+        <Icon name="star-outlined" style={classes.icon} />
         <View style={classes.middle}>
           <Text
             numberOfLines={1}

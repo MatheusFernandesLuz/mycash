@@ -60,9 +60,10 @@ function latestSpending() {
   return data.filter((item) => item.id <= 5);
 }
 
-export default function CardTransactions() {
+export default function CardTransactions({ style }) {
   return (
     <Card
+      style={style}
       title="Últimas transações"
       buttonProps={{ destiny: "Transacoes", title: "Ver todas" }}
       body={latestSpending().map((item) => {

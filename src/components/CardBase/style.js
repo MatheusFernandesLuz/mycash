@@ -4,10 +4,10 @@ import common from "../../commonStyles";
 export default () =>
   StyleSheet.create({
     card: {
-      backgroundColor: "#F1F1F1",
+      backgroundColor: common.color.textLight,
       width: "95%",
       minHeight: 100,
-      marginBottom: 15,
+      marginTop: 15,
       borderRadius: 12,
       elevation: 10,
       paddingVertical: 10,
@@ -27,7 +27,7 @@ export default () =>
 
     mainText: {
       fontFamily: common.fontFamily.bold,
-      color: common.color.main,
+      color: common.color.textMain,
       fontSize: 18,
     },
 
@@ -42,7 +42,7 @@ export default () =>
     },
 
     textButton: {
-      color: common.color.main,
+      color: common.color.mainText,
       fontSize: 12,
       fontFamily: common.fontFamily.regular,
     },

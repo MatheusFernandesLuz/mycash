@@ -1,12 +1,14 @@
 export default {
   fontFamily: {
-    regular: "montserrat-regular",
-    bold: "montserrat-bold",
-    medium: "montserrat-medium",
+    regular: "roboto-regular",
+    bold: "roboto-bold",
+    medium: "roboto-medium",
   },
 
   color: {
-    main: "#424242",
-    secondary: "#727272",
+    textMain: "#424242",
+    textSecondary: "#727272",
+    textLight: "#F1F1F1",
+    background: "#006ADA",
   },
 };

@@ -5,9 +5,10 @@ import Style from "./style";
 
 const classes = Style();
 
-export default function CardTotais() {
+export default function CardTotais({ style }) {
   return (
     <Card
+      style={style}
       title="Totais"
       body={
         <View style={classes.container}>
