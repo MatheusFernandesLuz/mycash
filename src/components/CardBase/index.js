@@ -28,7 +28,7 @@ export default function CardBase({ title, body, footer, buttonProps, style }) {
       </View>
       <FlatLine></FlatLine>
       <View style={classes.cardBody}>{body}</View>
-      <View>{footer}</View>
+      {footer && <View>{footer}</View>}
     </View>
   );
 }

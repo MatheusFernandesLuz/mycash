@@ -4,11 +4,11 @@ import common from "../../commonStyles";
 export default () =>
   StyleSheet.create({
     card: {
-      backgroundColor: common.color.textLight,
-      width: "95%",
+      backgroundColor: common.color.backgroundCard,
+      width: "96%",
       minHeight: 100,
       marginTop: 15,
-      borderRadius: 12,
+      borderRadius: 8,
       elevation: 10,
       paddingVertical: 10,
       paddingHorizontal: 15,
@@ -34,7 +34,7 @@ export default () =>
     cardButton: {
       borderWidth: 0.7,
       borderColor: common.color.main,
-      borderRadius: 20,
+      borderRadius: 22,
       paddingVertical: 5,
       paddingHorizontal: 8,
       justifyContent: "center",

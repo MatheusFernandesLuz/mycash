@@ -9,7 +9,7 @@ export default () =>
       backgroundColor: common.color.background,
     },
 
-    section: {
+    header: {
       width: "100%",
       flexDirection: "row",
       alignItems: "center",
@@ -18,21 +18,22 @@ export default () =>
       borderBottomColor: "#005A96",
     },
 
-    iconMenu: {
-      fontSize: 22,
-      color: common.color.textLight,
-      marginLeft: "5%",
+    touch: {
+      width: 50,
+      height: 50,
+      alignItems: "center",
+      justifyContent: "center",
     },
 
-    iconArrow: {
+    icon: {
       fontSize: 22,
       color: common.color.textLight,
     },
 
     monthSelection: {
       width: "60%",
-      marginVertical: 15,
-      marginLeft: "10%",
+      marginVertical: 5,
+      marginLeft: "6%",
       flexDirection: "row",
       justifyContent: "space-around",
       alignItems: "center",
@@ -46,6 +47,7 @@ export default () =>
     },
 
     scroll: {
+      backgroundColor: common.color.backgroundScroll,
       flex: 1,
       width: "100%",
     },
