@@ -9,8 +9,8 @@ export default {
     textMain: "#424242",
     textSecondary: "#727272",
     textLight: "#F1F1F1",
-    background: "#0F406B",
+    backgroundBlue: "#0F406B",
     backgroundCard: "#EEEEEE",
-    backgroundScroll: "#FEFeFE",
+    backgroundDefault: "#FEFEFE",
   },
 };

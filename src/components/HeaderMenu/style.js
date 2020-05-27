@@ -1,16 +1,18 @@
 import { StyleSheet } from "react-native";
+import Constants from "expo-constants";
+
 import common from "../../commonStyles";
 
 export default () =>
   StyleSheet.create({
     container: {
       alignItems: "center",
-      borderBottomColor: common.color.background,
-      borderBottomWidth: 1.2,
       flexDirection: "row",
-      paddingHorizontal: 5,
-      paddingVertical: 5,
       width: "100%",
+      backgroundColor: common.color.backgroundBlue,
+      paddingTop: Constants.statusBarHeight + 5,
+      paddingBottom: 5,
+      elevation: 10,
     },
 
     menuIcon: {
@@ -41,7 +43,7 @@ export default () =>
     mounth: {
       marginHorizontal: 8,
       fontSize: 18,
-      color: "#F1F1F1",
+      color: common.color.textLight,
       fontFamily: common.fontFamily.bold,
     },
   });

@@ -1,11 +1,40 @@
 import React from "react";
-import { Text } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { View, Text, TouchableOpacity, FlatList } from "react-native";
 
-export default function Accounts() {
+import CardAccount from "../../components/CardAccount";
+import Style from "./style";
+
+const classes = Style();
+
+const DATA = [
+  {
+    id: "1",
+    nome: "NuBank",
+    title: "conta corrente",
+    saldo: "R$ 1.200,00",
+  },
+  {
+    id: "2",
+    nome: "Inter",
+    title: "conta corrente",
+    saldo: "R$ 1.200,00",
+  },
+  {
+    id: "3",
+    nome: "Caixa",
+    title: "conta poupança",
+    saldo: "R$ 1.200,00",
+  },
+];
+
+export default function App() {
   return (
-    <SafeAreaView>
-      <Text>Heelo</Text>
-    </SafeAreaView>
+    <View style={classes.container}>
+      <FlatList
+        data={DATA}
+        renderItem={({ item }) => <CardAccount {...item} />}
+        keyExtractor={(item) => item.id}
+      />
+    </View>
   );
 }

@@ -33,7 +33,7 @@ export default () =>
 
     cardButton: {
       borderWidth: 0.7,
-      borderColor: common.color.main,
+      borderColor: common.color.textMain,
       borderRadius: 22,
       paddingVertical: 5,
       paddingHorizontal: 8,
@@ -42,7 +42,7 @@ export default () =>
     },
 
     textButton: {
-      color: common.color.mainText,
+      color: common.color.textMain,
       fontSize: 12,
       fontFamily: common.fontFamily.regular,
     },

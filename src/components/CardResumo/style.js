@@ -34,7 +34,7 @@ export default () =>
     },
 
     tituloValor: {
-      color: common.color.main,
+      color: common.color.textMain,
       fontSize: 12,
       fontFamily: common.fontFamily.medium,
     },
@@ -47,7 +47,7 @@ export default () =>
     footer: {
       fontSize: 11,
       padding: 5,
-      color: common.color.main,
+      color: common.color.textMain,
       fontFamily: common.fontFamily.medium,
     },
   });
