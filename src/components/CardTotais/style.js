@@ -13,11 +13,13 @@ export default () =>
       color: common.color.textMain,
       fontFamily: common.fontFamily.regular,
       marginVertical: 2,
+      fontSize: 14,
     },
 
     totalText: {
       color: common.color.textMain,
       fontFamily: common.fontFamily.bold,
       marginVertical: 2,
+      fontSize: 14,
     },
   });

@@ -5,24 +5,21 @@ export default () =>
   StyleSheet.create({
     container: {
       flexDirection: "row",
-      justifyContent: "space-around",
+      justifyContent: "space-between",
       alignItems: "center",
-      paddingVertical: 10,
+      paddingTop: 10,
     },
 
     indicadores: {
-      flex: 1,
-      height: "100%",
-      flexDirection: "row",
-      justifyContent: "space-around",
-      alignItems: "flex-end",
-      backgroundColor: "#E5E5E5",
-      borderRadius: 10,
-      marginRight: 10,
-      paddingVertical: 10,
+      flex: 2,
+      justifyContent: "center",
+      backgroundColor: "#F0F0F0",
+      padding: 10,
+      borderRadius: 12,
     },
 
     valores: {
+      flex: 1,
       height: "100%",
       alignItems: "flex-end",
       justifyContent: "flex-start",

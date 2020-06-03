@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 
 import Card from "../CardBase";
+import FastButton from "../FastButton";
 import Grafico from "../Grafico";
 import Style from "./style";
 const classes = Style();
@@ -11,15 +12,12 @@ export default function CardResumo({ style }) {
     <Card
       style={style}
       title="Resumo mensal"
-      buttonProps={{
-        destiny: "Planejamento",
-        title: "Ver Planejamento",
-      }}
+      cardSkill={<FastButton destiny="Planejamento" title="Ver Planejamento" />}
       body={
         <View style={classes.container}>
           <View style={classes.indicadores}>
-            <Grafico color="#AA3F3F" percent={43} subtitle="Despesas"></Grafico>
-            <Grafico color="#005AE2" percent={57} subtitle="Economia"></Grafico>
+            <Grafico color="#AA3F3F" percent={23} subtitle="Despesas"></Grafico>
+            <Grafico color="#005AE2" percent={75} subtitle="Economia"></Grafico>
           </View>
           <View style={classes.valores}>
             <TouchableOpacity style={classes.touchArea}>
@@ -34,10 +32,8 @@ export default function CardResumo({ style }) {
                 R$ 749,50
               </Text>
             </TouchableOpacity>
-            <Text style={classes.tituloValor}>Economia</Text>
-            <Text style={[classes.valor, { color: "#005AE2" }]}>
-              R$ 1.000,00
-            </Text>
+            <Text style={classes.tituloValor}>Planejado</Text>
+            <Text style={[classes.valor, { color: "#005AE2" }]}>R$ 500,00</Text>
           </View>
         </View>
       }

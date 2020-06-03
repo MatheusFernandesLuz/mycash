@@ -8,9 +8,19 @@ export default () =>
       alignItems: "center",
     },
 
+    absolute: {
+      position: "absolute",
+      top: 80,
+    },
+
     scroll: {
       flex: 1,
       width: "100%",
-      backgroundColor: common.color.backgroundDefault,
+      paddingTop: 10,
+    },
+
+    contentScroll: {
+      alignItems: "center",
+      paddingBottom: 75,
     },
   });

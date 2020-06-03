@@ -1,11 +1,12 @@
 import React from "react";
 import { AntDesign } from "@expo/vector-icons";
 import ActionButton from "react-native-action-button";
+import common from "../../commonStyles";
 
 export default function ButtonMenu() {
   return (
     <ActionButton
-      buttonColor="rgba(15, 64, 107, 1)"
+      buttonColor={common.color.backgroundBlue}
       bgColor="black"
       bgOpacity={0.5}
       size={60}

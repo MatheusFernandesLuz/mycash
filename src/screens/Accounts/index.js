@@ -31,6 +31,7 @@ export default function App() {
   return (
     <View style={classes.container}>
       <FlatList
+        style={classes.flatList}
         data={DATA}
         renderItem={({ item }) => <CardAccount {...item} />}
         keyExtractor={(item) => item.id}

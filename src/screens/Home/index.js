@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { ScrollView, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 import HeaderMenu from "../../components/HeaderMenu";
 import CardTotais from "../../components/CardTotais";
@@ -18,7 +17,7 @@ export default class Home extends Component {
         <HeaderMenu />
         <ScrollView
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={{ alignItems: "center", paddingBottom: 75 }}
+          contentContainerStyle={classes.contentScroll}
           style={classes.scroll}
         >
           <CardTotais />

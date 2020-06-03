@@ -6,23 +6,22 @@ import common from "../../commonStyles";
 export default () =>
   StyleSheet.create({
     container: {
-      alignItems: "center",
       flexDirection: "row",
       width: "100%",
       backgroundColor: common.color.backgroundBlue,
-      paddingTop: Constants.statusBarHeight + 5,
+      paddingTop: Constants.statusBarHeight,
       paddingBottom: 5,
-      elevation: 10,
+      paddingHorizontal: 15,
     },
 
     menuIcon: {
       color: "#FEFEFE",
-      fontSize: 22,
+      fontSize: 25,
     },
 
     arrowIcon: {
       color: "#FEFEFE",
-      fontSize: 22,
+      fontSize: 25,
     },
 
     iconButton: {
@@ -34,10 +33,10 @@ export default () =>
 
     selectMounth: {
       alignItems: "center",
-      justifyContent: "center",
-      paddingRight: "10%",
+      justifyContent: "flex-end",
       flexDirection: "row",
       flex: 1,
+      height: 50,
     },
 
     mounth: {

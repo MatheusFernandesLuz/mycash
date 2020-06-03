@@ -1,6 +1,7 @@
 import React from "react";
 
 import Card from "../CardBase";
+import FastButton from "../FastButton";
 import Transaction from "../Transaction";
 
 const data = [
@@ -65,7 +66,7 @@ export default function CardTransactions({ style }) {
     <Card
       style={style}
       title="Últimas transações"
-      buttonProps={{ destiny: "Transacoes", title: "Ver todas" }}
+      cardSkill={<FastButton destiny="Transacoes" title="Ver todas" />}
       body={latestSpending().map((item) => {
         return (
           <Transaction

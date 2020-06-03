@@ -5,24 +5,13 @@ export default () =>
   StyleSheet.create({
     card: {
       backgroundColor: common.color.backgroundCard,
-      width: "96%",
+      width: "95%",
       minHeight: 100,
-      marginTop: 15,
-      borderRadius: 8,
-      elevation: 10,
-      paddingVertical: 10,
-      paddingHorizontal: 15,
-    },
-
-    cardHeader: {
-      flexDirection: "row",
-      justifyContent: "space-between",
-      alignItems: "center",
-      marginBottom: 5,
-    },
-
-    cardBody: {
-      padding: 5,
+      marginBottom: 12,
+      borderRadius: 12,
+      elevation: 2,
+      borderWidth: 0.5,
+      borderColor: "#d9d9d9",
     },
 
     mainText: {
@@ -31,19 +20,26 @@ export default () =>
       fontSize: 18,
     },
 
-    cardButton: {
-      borderWidth: 0.7,
-      borderColor: common.color.textMain,
-      borderRadius: 22,
-      paddingVertical: 5,
-      paddingHorizontal: 8,
-      justifyContent: "center",
+    cardHeader: {
+      flexDirection: "row",
+      justifyContent: "space-between",
       alignItems: "center",
+      marginBottom: 5,
+      paddingHorizontal: 15,
+      paddingTop: 8,
     },
 
-    textButton: {
-      color: common.color.textMain,
-      fontSize: 12,
-      fontFamily: common.fontFamily.regular,
+    cardBody: {
+      paddingHorizontal: 15,
+      paddingBottom: 8,
+    },
+
+    cardFooter: {
+      backgroundColor: "#EEEEEE",
+      borderTopWidth: 0.5,
+      borderTopColor: "#D1D1D1",
+      borderBottomRightRadius: 12,
+      borderBottomLeftRadius: 12,
+      padding: 8,
     },
   });

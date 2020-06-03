@@ -1,6 +1,8 @@
 import React from "react";
 import { View, Text } from "react-native";
+
 import Card from "../CardBase";
+import FastButtom from "../FastButton";
 import Style from "./style";
 
 const classes = Style();
@@ -26,6 +28,7 @@ export default function CardTotais({ style }) {
           </View>
         </View>
       }
+      cardSkill={<FastButtom destiny="Contas" title="Ver contas" />}
     ></Card>
   );
 }
